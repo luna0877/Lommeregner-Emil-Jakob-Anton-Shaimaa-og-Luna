@@ -71,7 +71,9 @@ var midVal =  function(a, b, c){
     else {return c}
 }
 var showString = function(a, b, c){
-    return "Jeg er skøn";
+    return a +" "+ b + " " + c;
+
+
 }
 var reverseString = function(a, b, c){
     return "skøn jeg er";
