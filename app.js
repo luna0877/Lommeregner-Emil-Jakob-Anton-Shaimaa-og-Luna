@@ -62,9 +62,7 @@ var løs2grads = function (a, b, c) {
  * @param {number} c 
  * @returns all solutions spaced by " og " returns null if no solutions exists.
  */
-var løs2grads = function(a, b, c){
-    return "0 og 1" 
-}
+
 var minVal = function(a, b, c){
     if(a<b && a<c) {return a }
     
