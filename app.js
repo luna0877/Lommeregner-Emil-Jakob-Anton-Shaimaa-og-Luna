@@ -12,7 +12,7 @@ var pressButton = function(action){
         "midVal": midVal(Number(inA), Number(inB), Number(inC)),
         "maxVal": maxVal(Number(inA), Number(inB), Number(inC)),
         "showString": showString(inA, inB, inC),
-        "reverse": reverseString(inA, inB, inC),
+        "reverseString": reverseString(inA, inB, inC),
         "løs2grads": løs2grads(Number(inA), Number(inB), Number(inC)),
         "sortByAlphabet": sortByAlphabet(inA, inB, inC),
         "kampPoint": kampPoint(inA),
@@ -92,7 +92,7 @@ var showString = function(a, b, c){
 
 }
 var reverseString = function(a, b, c){
-    return "skøn jeg er";
+    return c + " " + b + " " + a;  
 }
 var sortByAlphabet = function(a, b, c){
     return "er jeg lang";
