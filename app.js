@@ -37,6 +37,24 @@ var multiply = function(a, b){
 var diskriminant = function(a, b, c){
     return 0;
 }
+
+var løs2grads = function (a, b, c) {
+    if (b * b - 4 * a * c > 0) {
+        var x1 = (-b + Math.sqrt(b * b - 4 * a * c)) / 2 * a;
+        var x2 = (-b - Math.sqrt(b * b - 4 * a * c)) / 2;
+        return x1 + " og " + x2 // eller "3" eller "Der findes ingen løsninger";
+    }
+
+    if (b * b - 4 * a * c == 0) {
+        var x3 = (-b) / (2 * a);
+        return x3 // eller "3" eller "Der findes ingen løsninger";
+    }
+
+    if (b * b - 4 * a * c < 0) {
+        return null
+    }
+
+}
 /**
  * HINT: diskrimant(....) might be handy.
  * @param {number} a 
@@ -44,9 +62,7 @@ var diskriminant = function(a, b, c){
  * @param {number} c 
  * @returns all solutions spaced by " og " returns null if no solutions exists.
  */
-var løs2grads = function(a, b, c){
-    return "0 og 1" 
-}
+
 var minVal = function(a, b, c){
     if(a<b && a<c) {return a }
     
