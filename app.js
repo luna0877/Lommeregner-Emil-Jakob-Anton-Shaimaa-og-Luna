@@ -125,6 +125,9 @@ var exactlyOne = function(b1, b2, b3){
  * Similar to above true if exactly two parameters is true.
  */
 var exactlyTwo = function(b1, b2, b3){
+    if(b1&&b2||b1&&b3||b2&&b3==true)
+    return!b1&&b2&&b3;
+    else
     return false;
 }
 
